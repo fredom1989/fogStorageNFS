@@ -20,25 +20,6 @@ fi
 apt-get install -y nfs;
 apt-get install -y nfs-kernel-server;
 
-
-# Section réservé aux test VM
- 
-echo "# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
-source /etc/network/interfaces.d/*
-# The loopback network interface
-auto lo
-iface lo inet loopback
-allow-hotplug enp0s3
-iface enp0s3 inet static
-address 192.168.4.100
-netmask 255.255.255.0
-gateway	192.168.4.1" >> /etc/network/interfaces;
-
-
-
-
-
 #### Preparation du stockage FOG ###
 
 bc = "no";
